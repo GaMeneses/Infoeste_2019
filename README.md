@@ -6,5 +6,3 @@
       <li>O que é Html</li>
       <li>O que é CSS</li>
       <li> O que é JavaScript</li>
-      
-    </ul>
