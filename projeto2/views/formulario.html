@@ -8,10 +8,17 @@
         <title>Formulário</title>
 
         <!--link o css-->
-
+        <link rel='stylesheet' type='text/css' media='screen' href='../public/css/css.css'>
         <!--link o jquery-->
-       
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <!-- Mask -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
         <!--link my_javascrip-->
+        <script src="../public/js/validaForm.js"></script>
     </head>
 
     <body>
@@ -23,10 +30,10 @@
             <menu>
                 <ul>
                     <!--colocar o caminho das outras páginas-->
-                    <li><a >Home</a></li>
-                    <li><a >Formulário</a></li>
-                    <li><a >Busca Cep</a></li>
-                    <li><a >Sobre</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Formulário</a></li>
+                    <li><a href="buscaCep.html">Busca Cep</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
                 </ul>
             </menu>
         </nav>
@@ -47,7 +54,7 @@
                             <br>
 
                             <label for="email">E-mail:(*)</label> <br>
-                            <input type="email" id="email" name="email" placeholder="fulano@gmail.com"> <br>
+                            <input type="text" id="email" name="email" placeholder="fulano@gmail.com"> <br>
 
                             <label for="cursos">Curso:(*)</label> <br>
                             <select name="cursos" id="cursos"> <br>
@@ -61,8 +68,8 @@
                             <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea> <br>
 
                             <!--colocar os eventos de validação de formulario-->
-                            <button type="button" class="sucesso">Cadastrar</button>
-                            <button class="cancela">Cancelar</button>
+                            <button type="button" class="sucesso" onclick="validar()">Cadastrar</button>
+                            <button type="button" class="cancela" onclick="window.location.href='index.html'">Cancelar</button>
                         </form>
                     </section>
 
